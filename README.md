@@ -14,12 +14,17 @@ Es necesario tener instalado con:
    - Angular
    - Java
    - Spring Tools Suite
- 
-
+   -MySQL
+   
 1. Desacargar o clonar el repositorio.
-2. Abrir La carpeta con Spring Tools Suite y ejecutar como una Spring Boot APP
+2. Crear una base de datos con nombre alcancia (create database alcancia;) 
+3. Modificar el archivo aplication.yml con su usuario y contraseña. 
+2. Ejecutar como una Spring Boot APP con Spring Tools Suite la aplicación.
 3. Ir a la ubicación de la carpeta con el terminal hasta la carpeta nombrada alcancia 
 4. Ejecutar ng serve --open
 5. Se abre la aplicación y si no sucede esto ir a http://localhost:4200/  (Es necesario que el puerto no se esté puerto solo este siendo usado por la aplicación)
 
-#### Demo
+### Demo
+
+![Screenshot](https://github.com/Carlosprimo/AlcanciaZABUD/blob/master/assets/Captura.PNG)
+![Screenshot](https://github.com/Carlosprimo/AlcanciaZABUD/blob/master/assets/Captura2.PNG)
