@@ -1,0 +1,69 @@
+<div class="page-bg">
+</div>
+<section class="color">
+    <div class="fondo">
+        <div class="container">
+            <div class="container row" id="cont">
+                <h1>
+                    {{titulo}}
+                </h1>
+                <h1 id= total>
+                    Dinero Total: {{monedas[0].dinero*monedas[0].cantidad + monedas[1].dinero*monedas[1].cantidad + monedas[2].dinero*monedas[2].cantidad + monedas[3].dinero*monedas[3].cantidad + monedas[4].dinero*monedas[4].cantidad}}
+                </h1>
+            </div>
+            <div>
+                <div class="d-grid gap-2 col-6 mx-auto" id="botonesIncremento">
+                    <button class="btn btn-secondary" type="button" (click)="onUpdate1()"
+                        onclick="location.href='http://localhost:4200/';">Añadir 50 pesos</button>
+                    <button class="btn btn-secondary" type="button" (click)="onUpdate2()"
+                        onclick="location.href='http://localhost:4200/';">Añadir 100 pesos</button>
+                    <button class="btn btn-secondary" type="button" (click)="onUpdate3()"
+                        onclick="location.href='http://localhost:4200/';">Añadir 200 pesos</button>
+                    <button class="btn btn-secondary" type="button" (click)="onUpdate4()"
+                        onclick="location.href='http://localhost:4200/';">Añadir 500 pesos</button>
+                    <button class="btn btn-secondary" type="button" (click)="onUpdate5()"
+                        onclick="location.href='http://localhost:4200/';">Añadir 1000 pesos</button>
+                </div>
+            </div>
+            <div class="table-responsive" id=tabla>
+                <table class="table table-sm">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Dinero</th>
+                            <th scope="col">Cantidad de dinero por denominación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let m of monedas">
+                            <th scope="row">
+                                {{m.id}}
+                            </th>
+                            <td>
+                                {{m.nombre}}
+                            </td>
+                            <td>
+                                {{m.cantidad}}
+                            </td>
+                            <td>
+                                {{m.dinero*m.cantidad}}
+                            </td>
+                            <td>
+                                {{(monedas[0].dinero*monedas[0].cantidad + monedas[1].dinero*monedas[1].cantidad + monedas[2].dinero*monedas[2].cantidad + monedas[3].dinero*monedas[3].cantidad + monedas[4].dinero*monedas[4].cantidad)/m.dinero}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-center text-lg-start" id="footer">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.3)">
+            Desarrollado por:
+            <p>Carlos Primo B.</p>
+            <img onclick="location.href='https://github.com/Carlosprimo/PruebaTecnicaZabud'" src="https://img.icons8.com/fluent-systems-filled/24/000000/github.png"/>
+        </div>
+    </footer>
+</section>

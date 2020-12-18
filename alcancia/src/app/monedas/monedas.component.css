@@ -1,0 +1,36 @@
+.fondo {
+    background: linear-gradient(left, tomato 20%, cyan 60%, lightgreen 100%);
+    font-family: 'Playfair Display', serif;
+}
+#cont{
+    line-height: 100px;
+    font-family: 'Playfair Display', serif;
+}
+#footer{
+    margin-top: 1cm;
+    font-family: 'Playfair Display', serif;
+}
+.row:not(:last-child) {
+    border-bottom: 4px solid #000;
+    margin-top: .9em;
+}
+#tabla{
+    margin-top: 1cm;
+    align-items: center;
+    text-align: center;
+}
+#botonesIncremento{
+    margin-top: 1cm;
+    align-items: left;
+}
+.color {
+    background: -webkit-linear-gradient(90deg, #65997d 10%, #fccb6e 90%);
+    background:    -moz-linear-gradient(90deg, #65997d 10%, #fccb6e 90%);
+    background:     -ms-linear-gradient(90deg, #65997d 10%, #fccb6e 90%);
+    background:      -o-linear-gradient(90deg, #65997d 10%, #fccb6e 90%);
+    background:         linear-gradient(90deg, #65997d 10%, #fccb6e 90%);
+}
+#total{
+    display: inline;
+    text-align: right;
+}
